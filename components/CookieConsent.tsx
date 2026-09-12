@@ -16,6 +16,16 @@ export default function CookieConsent() {
     localStorage.setItem('cookie-consent', value);
     setVisible(false);
     if (value === 'granted') {
+      // Consent Mode v2 : informe Google Analytics que le suivi est autorisé.
+      const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+      if (typeof w.gtag === 'function') {
+        w.gtag('consent', 'update', {
+          analytics_storage: 'granted',
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+        });
+      }
       window.dispatchEvent(new Event('cookie-consent-granted'));
     }
   };

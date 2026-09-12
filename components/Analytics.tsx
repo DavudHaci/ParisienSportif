@@ -3,14 +3,18 @@
 import { useEffect } from 'react';
 
 /**
- * Chargement des outils tiers, contrôlé par le consentement cookies.
- * Les identifiants se configurent via les variables d'environnement
- * NEXT_PUBLIC_* (voir .env.example). Si une variable est absente,
- * l'outil correspondant n'est tout simplement pas chargé.
+ * Chargement des outils tiers.
+ *
+ * - Google Analytics (gtag.js) est chargé dans app/layout.tsx avec le
+ *   Consent Mode v2 : présent dès le premier affichage, mais sans cookies
+ *   tant que le visiteur n'a pas accepté le bandeau.
+ * - GTM et OneSignal ne sont chargés qu'après consentement.
+ * - Sentry est chargé sans condition (suivi d'erreurs, pas de publicité).
+ *
+ * Identifiants via variables d'environnement NEXT_PUBLIC_* (voir .env.example).
  */
 
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID; // ex : GTM-XXXXXXX
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // ex : G-XXXXXXXXXX
 const ONESIGNAL_APP_ID = process.env.NEXT_PUBLIC_ONESIGNAL_APP_ID;
 const SENTRY_LOADER_URL = process.env.NEXT_PUBLIC_SENTRY_LOADER_URL; // ex : https://js.sentry-cdn.com/xxxx.min.js
 
@@ -34,18 +38,10 @@ function loadMarketingTools() {
   if (marketingLoaded) return;
   marketingLoaded = true;
 
-  // Google Tag Manager (gère aussi Conversion Linker, remarketing, etc.)
+  // Google Tag Manager (gère Conversion Linker, remarketing, etc.)
   if (GTM_ID) {
     addInlineScript(
       `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`
-    );
-  }
-
-  // Google Analytics 4 (chargement direct, si utilisé sans GTM)
-  if (GA_ID) {
-    addScript(`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`);
-    addInlineScript(
-      `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}',{anonymize_ip:true});`
     );
   }
 
@@ -66,7 +62,7 @@ export default function Analytics() {
       addScript(SENTRY_LOADER_URL);
     }
 
-    // Outils marketing/mesure : uniquement après consentement.
+    // Outils marketing : uniquement après consentement.
     if (localStorage.getItem('cookie-consent') === 'granted') {
       loadMarketingTools();
     }

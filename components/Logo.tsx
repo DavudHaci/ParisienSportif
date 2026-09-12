@@ -1,0 +1,62 @@
+export default function LogoIcon({ size = 34 }: { size?: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label="Logo ParisienSportif.fr"
+    >
+      {/* Fond */}
+      <rect x="1" y="1" width="62" height="62" rx="14" fill="#0d1b2a" />
+      <rect
+        x="1"
+        y="1"
+        width="62"
+        height="62"
+        rx="14"
+        fill="none"
+        stroke="#2a9d8f"
+        strokeWidth="2"
+      />
+
+      {/* Tour Eiffel stylisée */}
+      <g fill="#2a9d8f">
+        {/* Flèche */}
+        <polygon points="27,7 31,28 23,28" />
+        {/* Antenne */}
+        <rect x="26.2" y="3" width="1.6" height="5" rx="0.8" />
+        {/* Plateforme */}
+        <rect x="20" y="28" width="14" height="3" rx="1.2" />
+        {/* Jambe gauche */}
+        <path d="M23 33 C23 41 18 47.5 12 54 L19 54 C24 47 26 40 26.5 33 Z" />
+        {/* Jambe droite */}
+        <path d="M31 33 C31 41 36 47.5 42 54 L35 54 C30 47 28 40 27.5 33 Z" />
+        {/* Arche */}
+        <path
+          d="M20 54 C24 48 30 48 34 54"
+          fill="none"
+          stroke="#2a9d8f"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+      </g>
+
+      {/* Ballon */}
+      <circle cx="48" cy="46" r="8" fill="#e9c46a" />
+      <polygon
+        points="48,41.8 51.8,44.6 50.4,49 45.6,49 44.2,44.6"
+        fill="#0d1b2a"
+      />
+      <path
+        d="M48 38.5 C51 39.5 53.5 42 54.5 45"
+        fill="none"
+        stroke="#0d1b2a"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        opacity="0.35"
+      />
+    </svg>
+  );
+}

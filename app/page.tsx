@@ -118,6 +118,21 @@ export default function HomePage() {
   return (
     <main>
       <section className="hero">
+        <div className="hero-badge">
+          <svg
+            width="22"
+            height="15"
+            viewBox="0 0 22 15"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Drapeau français"
+          >
+            <rect x="0" y="0" width="22" height="15" rx="2" fill="#ffffff" />
+            <path d="M0 2 a2 2 0 0 1 2 -2 H7.33 V15 H2 a2 2 0 0 1 -2 -2 Z" fill="#0055A4" />
+            <path d="M14.67 0 H20 a2 2 0 0 1 2 2 V13 a2 2 0 0 1 -2 2 H14.67 Z" fill="#EF4135" />
+          </svg>
+          <span>100&nbsp;% de sites agréés ANJ en France</span>
+        </div>
         <h1>Trouvez le site de paris sportifs qui vous correspond vraiment</h1>
         <p>
           Notre équipe teste et note les bookmakers détenteurs d&apos;un agrément en France.

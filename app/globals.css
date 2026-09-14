@@ -99,6 +99,20 @@ a:hover { text-decoration: underline; }
   padding: 64px 20px 72px;
   text-align: center;
 }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #e6ecf4;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 30px;
+  margin-bottom: 22px;
+}
+.hero-badge svg { display: block; flex-shrink: 0; }
 .hero h1 { font-size: 2.3rem; line-height: 1.25; max-width: 780px; margin: 0 auto 16px; }
 .hero p { color: #c3cedc; max-width: 640px; margin: 0 auto 28px; font-size: 1.05rem; }
 .hero .btn { font-size: 1rem; }

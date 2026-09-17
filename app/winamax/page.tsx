@@ -167,14 +167,9 @@ export default function WinamaxPage() {
             </p>
 
             <p style={{ textAlign: 'center', marginTop: 24 }}>
-              <a
-                href="https://www.winamax.fr"
-                className="btn"
-                rel="nofollow noopener"
-                target="_blank"
-              >
+              <span className="btn btn-inactive">
                 Découvrir Winamax
-              </a>
+              </span>
             </p>
 
             <div className="callout warn">

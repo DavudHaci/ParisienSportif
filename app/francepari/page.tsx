@@ -172,14 +172,9 @@ export default function FrancePariPage() {
             </p>
 
             <p style={{ textAlign: 'center', marginTop: 24 }}>
-              <a
-                href="https://www.france-pari.fr"
-                className="btn"
-                rel="nofollow noopener"
-                target="_blank"
-              >
+              <span className="btn btn-inactive">
                 Découvrir France Pari
-              </a>
+              </span>
             </p>
 
             <div className="callout warn">

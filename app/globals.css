@@ -136,6 +136,7 @@ a:hover { text-decoration: underline; }
 }
 .btn.btn-outline:hover { background: var(--accent); color: #fff; }
 .btn.btn-sm { padding: 8px 18px; font-size: 0.88rem; }
+.btn-inactive { pointer-events: none; cursor: default; user-select: none; }
 
 /* ---------- Sections ---------- */
 .section { padding: 56px 0; }

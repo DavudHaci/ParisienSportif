@@ -171,14 +171,9 @@ export default function VbetPage() {
             </p>
 
             <p style={{ textAlign: 'center', marginTop: 24 }}>
-              <a
-                href="https://www.vbet.fr"
-                className="btn"
-                rel="nofollow noopener"
-                target="_blank"
-              >
+              <span className="btn btn-inactive">
                 Découvrir Vbet
-              </a>
+              </span>
             </p>
 
             <div className="callout warn">

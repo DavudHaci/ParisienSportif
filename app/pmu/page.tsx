@@ -169,14 +169,9 @@ export default function PmuPage() {
             </p>
 
             <p style={{ textAlign: 'center', marginTop: 24 }}>
-              <a
-                href="https://www.pmu.fr"
-                className="btn"
-                rel="nofollow noopener"
-                target="_blank"
-              >
+              <span className="btn btn-inactive">
                 Découvrir PMU
-              </a>
+              </span>
             </p>
 
             <div className="callout warn">

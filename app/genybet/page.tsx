@@ -171,14 +171,9 @@ export default function GenybetPage() {
             </p>
 
             <p style={{ textAlign: 'center', marginTop: 24 }}>
-              <a
-                href="https://www.genybet.fr"
-                className="btn"
-                rel="nofollow noopener"
-                target="_blank"
-              >
+              <span className="btn btn-inactive">
                 Découvrir Genybet
-              </a>
+              </span>
             </p>
 
             <div className="callout warn">

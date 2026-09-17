@@ -36,14 +36,9 @@ export default function ComparatifPage() {
                 <span className="score-badge">9,6/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.betclic.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/betclic" className="link-review">
                   Lire notre avis
                 </Link>
@@ -65,14 +60,9 @@ export default function ComparatifPage() {
                 <span className="score-badge">9,4/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.winamax.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/winamax" className="link-review">
                   Lire notre avis
                 </Link>
@@ -94,14 +84,9 @@ export default function ComparatifPage() {
                 <span className="score-badge">9,1/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.unibet.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/unibet" className="link-review">
                   Lire notre avis
                 </Link>
@@ -123,14 +108,9 @@ export default function ComparatifPage() {
                 <span className="score-badge">8,8/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://enligne.parionssport.fdj.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/parionssport" className="link-review">
                   Lire notre avis
                 </Link>
@@ -152,14 +132,9 @@ export default function ComparatifPage() {
                 <span className="score-badge">8,6/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.zebet.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/zebet" className="link-review">
                   Lire notre avis
                 </Link>
@@ -181,14 +156,9 @@ export default function ComparatifPage() {
                 <span className="score-badge">8,4/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.pmu.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/pmu" className="link-review">
                   Lire notre avis
                 </Link>
@@ -210,14 +180,9 @@ export default function ComparatifPage() {
                 <span className="score-badge">8,2/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.netbet.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/netbet" className="link-review">
                   Lire notre avis
                 </Link>
@@ -239,14 +204,9 @@ export default function ComparatifPage() {
                 <span className="score-badge">8,0/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.vbet.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/vbet" className="link-review">
                   Lire notre avis
                 </Link>
@@ -268,14 +228,9 @@ export default function ComparatifPage() {
                 <span className="score-badge">7,8/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.france-pari.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/francepari" className="link-review">
                   Lire notre avis
                 </Link>
@@ -297,14 +252,9 @@ export default function ComparatifPage() {
                 <span className="score-badge">7,6/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.genybet.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/genybet" className="link-review">
                   Lire notre avis
                 </Link>

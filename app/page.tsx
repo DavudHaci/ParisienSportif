@@ -202,14 +202,9 @@ export default function HomePage() {
                 <span className="score-badge">9,6/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.betclic.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/betclic" className="link-review">
                   Lire notre avis
                 </Link>
@@ -231,14 +226,9 @@ export default function HomePage() {
                 <span className="score-badge">9,4/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.winamax.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/winamax" className="link-review">
                   Lire notre avis
                 </Link>
@@ -260,14 +250,9 @@ export default function HomePage() {
                 <span className="score-badge">9,1/10</span>
               </div>
               <div className="book-actions">
-                <a
-                  href="https://www.unibet.fr"
-                  className="btn btn-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
+                <span className="btn btn-sm btn-inactive">
                   Visiter le site
-                </a>
+                </span>
                 <Link href="/unibet" className="link-review">
                   Lire notre avis
                 </Link>
